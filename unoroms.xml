@@ -17,4 +17,6 @@
   <project path="hardware/qcom/media-caf/msm8660" name="UnORoms/android_hardware_qcom_media-caf_msm8660" remote="gh" revision="cm-12.1"/>
   <project path="hardware/qcom/display-caf/msm8660" name="UnORoms/android_hardware_qcom_display-caf_msm8660" remote="gh" revision="cm-12.1"/>
 
+  <project path="external/broadcom/bplus" name="UnORoms/external_broadcom_bplus" revision="cm-12.1"/>
+  
 </manifest>
