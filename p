@@ -1,5 +1,3 @@
-cd ..
-
 cd bionic
 git fetch ssh://shantur@review.cyanogenmod.org:29418/CyanogenMod/android_bionic refs/changes/43/92943/2 && git cherry-pick FETCH_HEAD
 cd -
