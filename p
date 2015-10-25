@@ -19,6 +19,11 @@ cd system/core
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_core refs/changes/83/114383/1 && git cherry-pick FETCH_HEAD
 cd -
 
+cd frameworks/native
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/32/114332/1 && git cherry-pick FETCH_HEAD
+cd -
+
+
 rebase() {
     
     local dir=$1
