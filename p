@@ -9,13 +9,6 @@ git fetch http://review.cyanogenmod.org/CyanogenMod/android_hardware_libhardware
 
 cd -
 ##########
-cd hardware/libhardware_legacy
-
-# Virtual presentationPosition
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_hardware_libhardware_legacy refs/changes/68/113268/2 && git cherry-pick FETCH_HEAD
-
-cd -
-##########
 cd frameworks/opt/telephony
 
 #UiccTlvData
@@ -26,9 +19,6 @@ cd -
 ##########
 cd system/core
 
-# Gateway Properties
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_core refs/changes/83/114383/1 && git cherry-pick FETCH_HEAD
-
 # Native_Window_set_buffers_size
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_core refs/changes/66/114266/1 && git cherry-pick FETCH_HEAD
 
@@ -36,17 +26,8 @@ cd -
 ##########
 cd frameworks/native
 
-# SensorManager Symbols
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/32/114332/1 && git cherry-pick FETCH_HEAD
-
 #Custom Buffer
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/41/114241/7 && git cherry-pick FETCH_HEAD
-
-#MemoryHeapPmem
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/88/114888/1 && git cherry-pick FETCH_HEAD
-
-#Compatibility Symbols
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/86/114886/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_native refs/changes/41/114241/8 && git cherry-pick FETCH_HEAD
 
 cd -
 ##########
@@ -57,7 +38,6 @@ git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android
 
 cd -
 ##########
-
 
 rebase() {
     
