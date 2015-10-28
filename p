@@ -15,6 +15,17 @@ cd frameworks/opt/telephony
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/81/114381/1 && git cherry-pick FETCH_HEAD
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/82/114382/1 && git cherry-pick FETCH_HEAD
 
+#Teleresources
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/47/115047/3 && git cherry-pick FETCH_HEAD
+
+#Ril Subclass
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/03/114803/1 && git cherry-pick FETCH_HEAD
+git add Android.mk
+git cherry-pick --continue 
+
+#OldRil
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/04/114804/1 && git cherry-pick FETCH_HEAD
+
 cd -
 ##########
 cd system/core
