@@ -46,6 +46,14 @@ git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android
 
 cd -
 ##########
+cd system/bt
+
+#Compile with BLE
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_bt refs/changes/56/112456/1 && git cherry-pick FETCH_HEAD
+
+cd -
+##########
+
 
 rebase() {
     
