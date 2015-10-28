@@ -23,9 +23,6 @@ git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android
 git add Android.mk
 git cherry-pick --continue 
 
-#OldRil
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/04/114804/1 && git cherry-pick FETCH_HEAD
-
 cd -
 ##########
 cd system/core
