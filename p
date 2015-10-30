@@ -1,5 +1,5 @@
 cd vendor/cm
-git fetch http://review.cyanogenmod.org/CyanogenMod/android_vendor_cm refs/changes/36/111336/18 && git cherry-pick FETCH_HEAD
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_vendor_cm refs/changes/36/111336/26 && git cherry-pick FETCH_HEAD
 cd -
 ##########
 cd hardware/libhardware
