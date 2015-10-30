@@ -15,9 +15,6 @@ cd frameworks/opt/telephony
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/81/114381/1 && git cherry-pick FETCH_HEAD
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/82/114382/1 && git cherry-pick FETCH_HEAD
 
-#Teleresources
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/47/115047/3 && git cherry-pick FETCH_HEAD
-
 #Ril Subclass
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/03/114803/1 && git cherry-pick FETCH_HEAD
 git add Android.mk
@@ -28,7 +25,7 @@ cd -
 cd system/core
 
 # Native_Window_set_buffers_size
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_core refs/changes/66/114266/1 && git cherry-pick FETCH_HEAD
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_core refs/changes/66/114266/2 && git cherry-pick FETCH_HEAD
 
 cd -
 ##########
@@ -46,14 +43,6 @@ git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android
 
 cd -
 ##########
-cd system/bt
-
-#Compile with BLE
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_system_bt refs/changes/56/112456/1 && git cherry-pick FETCH_HEAD
-
-cd -
-##########
-
 
 rebase() {
     
