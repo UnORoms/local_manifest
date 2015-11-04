@@ -1,5 +1,5 @@
 cd vendor/cm
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_vendor_cm refs/changes/36/111336/26 && git cherry-pick FETCH_HEAD
+git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_vendor_cm refs/changes/36/111336/28 && git cherry-pick FETCH_HEAD
 cd -
 ##########
 cd hardware/libhardware
@@ -16,9 +16,7 @@ git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android
 git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/82/114382/1 && git cherry-pick FETCH_HEAD
 
 #Ril Subclass
-git fetch ssh://shantur.rathore@review.cyanogenmod.org:29418/CyanogenMod/android_frameworks_opt_telephony refs/changes/03/114803/1 && git cherry-pick FETCH_HEAD
-git add Android.mk
-git cherry-pick --continue 
+git fetch http://review.cyanogenmod.org/CyanogenMod/android_frameworks_opt_telephony refs/changes/03/114803/2 && git cherry-pick FETCH_HEAD
 
 cd -
 ##########
